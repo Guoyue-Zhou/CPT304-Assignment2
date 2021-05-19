@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#box{
+	width: 800px;
+	margin: 100px auto 0;
+	overflow: hidden;
+	text-align: center;
+	
+}
+
+#box select{
+	float: left;
+	width: 200px;
+	margin-bottom: 20px;
+}
+#box textarea{
+	resize: none;
+	margin-bottom: 30px;
+}
+
+#box img{
+	height: 34px;
+	float: left;
+	margin: 0 10px 0 10px;
+}
+
+#box h1{
+	margin-bottom: 10px;
+}

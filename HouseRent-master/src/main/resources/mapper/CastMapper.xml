@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.house.wym.dao.WeatherMapper">
+
+    <insert id="insertWeather"   parameterType="com.house.wym.entity.Cast">
+        insert into  house.tab_cast(date, wea, tem, win, win_speed)
+         values (#{date},#{wea},#{tem},#{win},#{win_speed})
+
+    </insert>
+
+    <select id="selectWea" resultType="com.house.wym.entity.Cast">
+        select * from house.tab_cast;
+    </select>
+
+
+
+    <select id="selWeaBy" resultType="com.house.wym.entity.Cast">
+
+        SELECT  * from house.tab_cast
+        where city_id=#{citycode}
+    </select>
+</mapper>
